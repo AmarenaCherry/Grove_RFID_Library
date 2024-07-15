@@ -70,7 +70,7 @@ SeeedRFID::~SeeedRFID() {
 
 
 boolean SeeedRFID::checkBitValidationUART() {
-    if (5 == _data.dataLen && (_data.raw[4] == _data.raw[0]^_data.raw[1]^_data.raw[2]^_data.raw[3])) {
+    if (14 == _data.dataLen) {
         _data.valid = _isAvailable = true;
         return true;
     } else {
