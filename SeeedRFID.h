@@ -58,7 +58,7 @@ struct RFIDdata {
     int dataLen;
     byte chk;
     boolean valid;
-    unsigned char raw[5];
+    unsigned char raw[14];
 };
 
 enum RFIDType {
